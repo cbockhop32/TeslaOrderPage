@@ -1,0 +1,9 @@
+@import '../../Styles/utils';
+
+
+.MainContainer {
+    width: 100%;
+    @include flexCenter(row);
+    
+    
+}

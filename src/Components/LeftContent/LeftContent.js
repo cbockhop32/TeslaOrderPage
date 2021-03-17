@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './LeftContent.scss';
 
 function LeftContent() {
     return (
-        <div>
+        <div className="LeftContent">
             Left Content
         </div>
     )

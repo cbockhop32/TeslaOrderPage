@@ -1,0 +1,45 @@
+@import './utils';
+
+
+
+%radioBtn-Text {
+    color: $greyText;
+    font-weight: bold;
+    width: 100%; 
+    border: 1px solid $greyText;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    display: block;
+    @include flexCenter(row);
+    justify-content: space-between;
+    
+    
+}
+
+
+%selectedRadioInput {
+    border: 3px solid $btnSelelected;
+    color: $blackText;
+   
+}
+
+
+%detailsBtn {
+    background: $greybackground;
+    border:none;
+    border-radius: 100px;
+    min-width: 80px;
+    max-width:160px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    font-size: 12px;
+
+
+}
+
+%detailsBtn:hover {
+    background: darken($greybackground, 5%);
+}

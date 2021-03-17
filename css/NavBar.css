@@ -1,0 +1,1 @@
+@font-face{src:url("../../fonts/TESLA.ttf");font-family:'logo'}.NavBar{display:flex;flex-direction:row;align-items:center;justify-content:center;justify-content:space-between;width:98%;margin:0 auto;height:52px}.NavBar .leftNav{font-family:logo;text-transform:uppercase;color:#171a20;font-size:1.2rem}

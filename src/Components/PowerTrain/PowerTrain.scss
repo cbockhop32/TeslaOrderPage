@@ -1,0 +1,47 @@
+@import '../../Styles/btns';
+
+.Powertrain {
+
+    width: 100%;
+    
+  
+    
+
+    h4 {
+        color: $greyText;
+    }
+
+   
+
+    .Powertrain-Option-Label {
+        @extend %radioBtn-Text;
+        cursor: pointer;
+        
+       
+    }
+
+
+
+
+    .Powertrain-Option-Input:checked+.Powertrain-Option-Label {
+       @extend %selectedRadioInput;
+     }
+
+     
+    .Powertrain-Option-Input {
+        display: none;
+    }
+
+    .Powertrain-Details-Container {
+        @include flexCenter(row);
+        .Feature-Details-Btn {
+            @extend %detailsBtn;
+           
+        }
+
+    }
+   
+
+
+     
+}

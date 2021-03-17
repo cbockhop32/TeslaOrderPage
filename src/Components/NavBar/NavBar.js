@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './NavBar.scss';
+
 
 function NavBar() {
     return (
-        <div>
+        <div className="NavBar">
 
-            <div className="leftNav">Alset</div>
-            <div className="leftNav">US</div>
+            <div className="leftNav">alset</div>
+            <div className="rightNav"><i className="fas fa-globe"></i>US</div>
             
         </div>
     )

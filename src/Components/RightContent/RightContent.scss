@@ -1,0 +1,62 @@
+@import '../../Styles/utils';
+
+
+.RightContent {
+    border: 1px solid black;
+    flex: 1;
+    margin-right: 3rem;
+    height: 100%;
+    @include flexCenter(column);
+
+
+    .RightContent-Header {
+        padding-top: 4rem;
+        text-align: center;
+
+        h1 {
+            color: $blackText;
+        }
+
+        p {
+            color: $greyText;
+            padding: 0.5rem 0;
+           
+        }
+    }
+
+
+
+    .RightContent-Highlights {
+        width: 100%;
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        padding: 1rem 0;
+
+        .Highlights-Box {
+
+            .Highlights-Box-MainText {
+                @include flexCenter(row);
+                color: $blackText;
+                
+                h2 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                
+                
+
+            }
+
+            p {
+                color: $greyText;
+            }
+
+           
+        }
+       
+    }
+}

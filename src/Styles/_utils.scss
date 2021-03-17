@@ -1,0 +1,16 @@
+// Color Vars
+
+$blackText: #171a20;
+$greyText: #5c5e62;
+$greybackground: #f4f4f4;
+$btnSelelected: #3e6ae1;
+
+
+// Mixins
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
