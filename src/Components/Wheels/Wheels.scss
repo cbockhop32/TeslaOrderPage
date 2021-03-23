@@ -1,0 +1,45 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+.Wheels {
+
+    width: 100%;
+    text-align: center;
+    @extend %RightContent-Child;
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .Wheels-Selector {
+
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 50%;
+
+        .Wheels-Option {
+
+            input {
+                display: none;
+            }
+
+            
+            input:checked+label img {
+                @extend %selectedRadioInput-Img;
+            }
+
+            label {
+                @extend %radioBtn-Img;
+                border: none;
+
+                img {
+                   @extend %radioBtn-ImgEl;
+                    
+                }
+            }
+
+        }
+    }
+
+}

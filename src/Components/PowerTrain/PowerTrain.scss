@@ -1,8 +1,13 @@
 @import '../../Styles/btns';
+@import '../../Styles/utils';
 
 .Powertrain {
 
     width: 100%;
+
+    @extend %RightContent-Child;
+
+  
     
   
     

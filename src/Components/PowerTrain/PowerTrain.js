@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './PowerTrain.scss';
+import {CurrentSelctionContext} from '../../context/CurrentSelection';
 
 function PowerTrain() {
+    const { currentPowerTrain, changePowerTrain } = useContext(CurrentSelctionContext);
+
+
+
     return (
      
 
@@ -14,8 +19,8 @@ function PowerTrain() {
             <div className="Powertrain-RearWheel">
                 <h4>Rear-Wheel Drive</h4>
                 <div>
-                    <input type="radio" name="powertrain" className="Powertrain-Option-Input" id="standard"></input>
-                    <label className="Powertrain-Option-Label" for="standard"><span>Standard Range Plus</span><span>$39,990</span></label>
+                    <input checked={currentPowerTrain === 'standard'}  type="radio" name="powertrain" className="Powertrain-Option-Input" id="standard"></input>
+                    <label className="Powertrain-Option-Label" htmlFor="standard" onClick={() => changePowerTrain('standard')}><span>Standard Range Plus</span><span>$39,990</span></label>
                 </div>
 
 
@@ -24,13 +29,13 @@ function PowerTrain() {
             <div className="Powertrain-AllWheel">
                 <h4>Dual Motor All-Wheel Drive</h4>
                 <div>
-                    <input type="radio" name="powertrain" className="Powertrain-Option-Input" id="long"></input>
-                    <label className="Powertrain-Option-Label" for="long"><span>Long Range</span><span>$46,490</span></label>
+                    <input checked={currentPowerTrain === 'long'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="long"></input>
+                    <label className="Powertrain-Option-Label" htmlFor="long" onClick={() => changePowerTrain('long')}><span>Long Range</span><span>$46,490</span></label>
                 </div>
 
                 <div>
-                    <input type="radio" name="powertrain" className="Powertrain-Option-Input" id="performance"></input>
-                    <label className="Powertrain-Option-Label" for="performance"><span>Performance</span><span>$55,990</span></label>
+                    <input checked={currentPowerTrain === 'performance'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="performance"></input>
+                    <label className="Powertrain-Option-Label" htmlFor="performance" onClick={() => changePowerTrain('performance')}><span>Performance</span><span>$55,990</span></label>
                 </div>
 
             </div>

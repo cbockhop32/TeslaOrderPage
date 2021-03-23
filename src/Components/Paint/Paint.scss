@@ -1,0 +1,44 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+
+
+.Paint {
+    width: 100%;
+    text-align: center;
+    @extend %RightContent-Child;
+
+    h2 {
+        font-size: 28px;
+    }
+    
+    .Paint-Selector {
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        
+        .Paint-Option {
+
+            
+            input {
+                display: none;
+            }
+
+            
+            input:checked+label img {
+                @extend %selectedRadioInput-Img;
+            }
+
+            label {
+                @extend %radioBtn-Img;
+                border: none;
+
+                img {
+                   @extend %radioBtn-ImgEl;
+                    
+                }
+            }
+
+
+        }
+    }
+}
