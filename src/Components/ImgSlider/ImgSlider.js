@@ -9,7 +9,7 @@ import {CurrentSlideContext} from '../../context/CurrentSlideContext';
 function ImgSlider() {
 
  
-    const { currentColor, currentWheels, currentInterior  } = useContext(CurrentSelctionContext);
+    const { currentColor, currentWheels, currentInterior, currentPowerTrain  } = useContext(CurrentSelctionContext);
     const { currentSlide, changeSlide  } = useContext(CurrentSlideContext);
 
 
@@ -21,7 +21,7 @@ function ImgSlider() {
 
 
    carImages.forEach(car => {
-    if(car.color === currentColor && currentWheels === car.wheels && car.interior === currentInterior) {
+    if(car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior) {
         imgList = car.images
     }
  })
