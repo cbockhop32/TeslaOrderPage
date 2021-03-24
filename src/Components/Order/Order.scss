@@ -1,0 +1,28 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+
+.Order {
+    padding-bottom: 45vh;
+
+    @include flexCenter(column);
+
+    p {
+        margin: 1rem 0;
+    }
+
+    .Order-Btn {
+        margin-top: 1rem;
+        @extend %detailsBtn;
+        width: 95%;
+        max-width: 95%;
+        background-color: $btnSelelected;
+        color: white;
+        
+    }
+
+    .Order-Btn:hover {
+        background-color: darken($btnSelelected, 10%);
+    }
+}
+

@@ -12,7 +12,7 @@ function LeftContent() {
 
     return (
         <div className="LeftContent">
-            <h1>{currentColor}{currentWheels}{currentInterior}</h1>
+            {/* <h1>{currentColor}{currentWheels}{currentInterior}</h1> */}
             <ImgSlider />
         </div>
     )

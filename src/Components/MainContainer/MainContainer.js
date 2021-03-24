@@ -1,8 +1,10 @@
 import React from 'react';
 import LeftContent from '../LeftContent/LeftContent';
 import RightContent from '../RightContent/RightContent';
+import Modal from '../Modal/Modal';
 import {CurrentSelectionProvider} from '../../context/CurrentSelection';
 import {CurrentSlideProvider} from '../../context/CurrentSlideContext';
+import {ModalProvider} from '../../context/ModalContext';
 import './MainContainer.scss';
 
 
@@ -11,10 +13,15 @@ function MainContainer() {
         <div className="MainContainer">
             <CurrentSelectionProvider>
                 <CurrentSlideProvider>
-                    <LeftContent />
-                    <RightContent />
+                    <ModalProvider>
+                        <LeftContent />
+                        <RightContent />
+
+                        <Modal/>
+
+                    </ModalProvider>
+                   
                 </CurrentSlideProvider>
-                
             </CurrentSelectionProvider>
            
         </div>

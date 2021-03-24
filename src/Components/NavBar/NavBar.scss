@@ -21,4 +21,18 @@
         color: $blackText;
         font-size: 1.2rem;
     }
+
+    .rightNav {
+        color: $greyText;
+        font-weight: bold;
+    
+        i {
+            margin-right: 0.5rem;
+            transform: scale(1.2);
+            color: $greyText;
+            
+        }
+    }
+
+    
 }

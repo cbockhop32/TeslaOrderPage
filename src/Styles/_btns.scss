@@ -12,6 +12,7 @@
     display: block;
     @include flexCenter(row);
     justify-content: space-between;
+    margin: 1rem 0;
     
     
 }
@@ -75,4 +76,8 @@
 
 %detailsBtn:hover {
     background: darken($greybackground, 5%);
+}
+
+%detailsBtn:focus {
+    outline: none;
 }

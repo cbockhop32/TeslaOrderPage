@@ -4,6 +4,8 @@ import PowerTrain from '../PowerTrain/PowerTrain';
 import Paint from '../Paint/Paint';
 import Wheels from '../Wheels/Wheels';
 import Interior from '../Interior/Interior';
+import SelfDriving from '../SelfDriving/SelfDriving';
+import Order from '../Order/Order';
 import './RightContent.scss';
 
 function RightContent() {
@@ -96,6 +98,14 @@ function RightContent() {
                 {/* Interior Section */}
 
                 <Interior />
+
+                {/* Self Driving Section */}
+
+                <SelfDriving />
+
+                {/* Order Form Section */}
+
+                <Order />
 
 
          

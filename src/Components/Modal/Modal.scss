@@ -1,0 +1,47 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+.Modal {
+    position: fixed;
+ 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    @include flexCenter(column);
+   
+
+
+    
+    .Modal-Slider {
+        height: 60vh;
+        width: 100%;
+        margin-bottom: 5rem;
+        
+
+        .Modal-Slide {
+            height: 100%;
+            width: 770px;
+            @include flexCenter(row);
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 0 auto;
+            
+
+
+            .Modal-Slide-Content-Left {
+              
+
+                height: 100%;
+                img {
+                    height: 100%;
+                    
+                }
+            }
+
+        }
+    }
+    
+}

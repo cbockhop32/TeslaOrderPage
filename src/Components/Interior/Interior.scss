@@ -45,5 +45,14 @@
         }
 
     }
+
+
+    .Interior-Details-Container {
+        margin-top: 2rem;
+        .Feature-Details-Btn {
+            @extend %detailsBtn;
+           
+        }
+    }
 }
 

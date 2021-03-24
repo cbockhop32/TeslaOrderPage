@@ -1,0 +1,65 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+
+.SelfDriving {
+    padding-bottom: 8rem;
+   .SelfDriving-Header {
+       @include flexCenter(column);
+       text-align: center;
+
+       h1 {
+           padding-bottom: 0.5rem;
+       }
+
+       p {
+           font-weight: bold;
+       }
+   }
+
+   .SelfDriving-Content {
+        .SelfDriving-Content-List {
+            margin: 0 auto;
+            width: 85%;
+            @include flexCenter(column);
+            align-items: flex-start;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+
+
+            li {
+                padding: 0.3rem 0;
+                color: $greyText;
+                
+            }
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+
+    .SelfDriving-Btns {
+        margin-top: 1rem;
+
+        .SelfDriving-Btn-Add {
+            @extend %detailsBtn;
+            background-color: $btnSelelected;
+            color: white;
+            width: 150px;
+            
+        }
+
+        .Feature-Details-Btn {
+            @extend %detailsBtn;
+            
+        }
+
+        .SelfDriving-Btn-Add:hover {
+            background-color: darken($btnSelelected, 10%);
+        }
+
+
+    }
+}

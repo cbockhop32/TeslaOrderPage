@@ -2,12 +2,14 @@ import React, {useContext} from 'react';
 import './Interior.scss';
 import { CurrentSelctionContext } from '../../context/CurrentSelection';
 import {CurrentSlideContext} from '../../context/CurrentSlideContext';
+import {ModalContext} from '../../context/ModalContext';
 import InteriorBlack from '../../Imgs/InteriorBlack.png';
 import InteriorWhite from '../../Imgs/InteriorWhite.png';
 
 function Interior() {
     const {currentInterior, changeInterior} = useContext(CurrentSelctionContext);
     const { changeSlide  } = useContext(CurrentSlideContext);
+    const {showModal} = useContext(ModalContext);
 
 
     let interiorDetails;
@@ -46,6 +48,11 @@ function Interior() {
             </div>
             <div >
                 {interiorDetails}
+            </div>
+
+            <div className="Interior-Details-Container">
+                <button className="Feature-Details-Btn" onClick={() => showModal(true)}>Feature Details</button>
+
             </div>
 
            
