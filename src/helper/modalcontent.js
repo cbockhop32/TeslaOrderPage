@@ -15,6 +15,10 @@ import powertrain4 from '../Imgs/Modal/powertrain/powertrain4.jpg'
 import powertrain5 from '../Imgs/Modal/powertrain/powertrain5.jpg'
 import powertrain6 from '../Imgs/Modal/powertrain/powertrain6.jpeg'
 
+// Self Driving Videos
+
+import selfdriving1 from '../Imgs/Modal/selfdriving/selfdriving.mp4';
+
 
 
 // Interior Content
@@ -92,4 +96,14 @@ export const powertrainModal = [
 
 
 
+]
+
+
+export const selfDrivingModal = [
+    {
+        vid: selfdriving1,
+        title: 'Auto Lane Change',
+        details: 'While driving on the highway, Automatic Lane Change will position your car in the optimal lane to prepare for merges and exits while overtaking slow cars. Drivers are given clear insight to upcoming lane changes as well as customization to Auto Lane Change functionality.'
+
+    }
 ]

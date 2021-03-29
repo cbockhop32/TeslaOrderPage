@@ -1,9 +1,10 @@
 import React, {useContext} from 'react';
 import {ModalContext} from '../../context/ModalContext';
+import {selfDrivingModal} from '../../helper/modalcontent';
 import './SelfDriving.scss';
 
 function SelfDriving() {
-    const {showModal} = useContext(ModalContext);
+    const {showModal, loadModalContent,setSelfDriving} = useContext(ModalContext);
 
 
     return (
@@ -33,7 +34,7 @@ function SelfDriving() {
 
                 <div className="SelfDriving-Btns">
                     <button className="SelfDriving-Btn-Add">Add</button>
-                    <button className="Feature-Details-Btn" onClick={() => showModal(true)}>Feature Details</button>
+                    <button className="Feature-Details-Btn" onClick={() => {showModal(true);setSelfDriving(true); loadModalContent(selfDrivingModal)}}>Feature Details</button>
 
                 </div>
 

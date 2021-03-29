@@ -1,0 +1,81 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+
+.Modal-SlideDriving {
+    height: 550px;
+    
+    width: 850px;
+    min-width: 850px;
+    @include flexCenter(row);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    // margin: 0 auto;
+    margin: 0 2rem;
+    position: relative;
+    // transform: translateX(50%);
+    
+
+
+    .Modal-Slide-Content-Left {
+       height: 100%;
+    @include flexCenter(column);
+      
+        
+        
+        .Slide-Video {
+            height: 50%;
+          
+          
+            
+        }
+    }
+
+    .Modal-Slide-Content-Right {
+        height: 80%;
+
+        .Modal-Slide-Content-Right-Text {
+            width: 90%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 24px;
+                padding-bottom: 0.5rem;
+            }
+
+            p {
+                color: $greyText;
+            }
+        }
+        
+    }
+
+   
+
+
+
+    .ModalClose-Btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: background 0.4s ease;
+    }
+    .ModalClose-Btn:hover {
+        background-color: $greybackground ;
+    }
+
+    .ModalClose-Btn:focus {
+        outline: none;
+    }
+
+}

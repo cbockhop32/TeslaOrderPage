@@ -4,11 +4,12 @@ import {ModalContext} from '../../context/ModalContext';
 import './Modal.scss';
 import ModalSlide from '../ModalSlide/ModalSlide';
 import Carousel from 'react-elastic-carousel';
+import ModalSlideDriving from '../ModalSlideDriving/ModalSlideDriving';
 
 
 
 function Modal() {
-    const { showing, content, showModal } = useContext(ModalContext);
+    const { showing, content, selfDrivingToggle, showModal,setSelfDriving } = useContext(ModalContext);
 
 
     // For window resizing
@@ -20,10 +21,31 @@ function Modal() {
 
     ]
 
+
+
+  
     
 
 
     if(showing === false) return null;
+
+
+    console.log(content);
+
+// Renders Slides for Images or Renders Slides for Self Driving Section w/ videos
+
+    let modalSlides;
+
+    if(selfDrivingToggle){
+        modalSlides = content.map(item => <ModalSlideDriving showModal={showModal} setSelfDriving={setSelfDriving} content={item}  />)
+    }
+
+    if(!selfDrivingToggle) {
+        modalSlides = content.map(item => <ModalSlide showModal={showModal} content={item}  />)
+    } 
+    
+    
+
 
 
 
@@ -41,16 +63,9 @@ function Modal() {
                 dotListClass="dots"
                 >
 
-                    {content.map(item => <ModalSlide showModal={showModal} content={item}  />)}
+                {modalSlides}
 
     
-                   
-                    
-
-                    
-
-
-                
                 </Carousel>
                
 

@@ -7,6 +7,7 @@ import modalReducer from './modalReducer';
    
 const initialState = {
     showing: false,
+    selfDrivingToggle: false,
     content: []
 }
 
@@ -35,6 +36,14 @@ export const ModalProvider = ({children}) => {
         })
     }
 
+    function setSelfDriving(selfDrivingToggle) {
+        dispatch({
+            type: 'SELFDRIVING_TOGGLE',
+            payload: selfDrivingToggle
+        })
+
+    }
+
  
 
 
@@ -44,9 +53,11 @@ export const ModalProvider = ({children}) => {
         <ModalContext.Provider
             value={{
                 showing: state.showing,
+                selfDrivingToggle: state.selfDrivingToggle,
                 content: state.content,
                 showModal,
-                loadModalContent
+                loadModalContent,
+                setSelfDriving
 
             }}
         >
