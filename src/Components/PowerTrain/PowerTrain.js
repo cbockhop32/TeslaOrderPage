@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 import './PowerTrain.scss';
 import {CurrentSelctionContext} from '../../context/CurrentSelection';
 import {ModalContext} from '../../context/ModalContext';
+import {powertrainModal} from '../../helper/modalcontent';
 
 function PowerTrain() {
     const { currentPowerTrain, changePowerTrain, changeWheels } = useContext(CurrentSelctionContext);
-    const { showModal } = useContext(ModalContext);
+    const { showModal, loadModalContent } = useContext(ModalContext);
 
 
 
@@ -43,7 +44,7 @@ function PowerTrain() {
             </div>
 
             <div className="Powertrain-Details-Container">
-                <button className="Feature-Details-Btn" onClick={() => showModal(true)}>Feature Details</button>
+                <button className="Feature-Details-Btn" onClick={() => {showModal(true); loadModalContent(powertrainModal)}}>Feature Details</button>
 
             </div>
             

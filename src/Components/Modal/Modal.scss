@@ -8,8 +8,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     @include flexCenter(column);
+
    
 
 
@@ -48,78 +49,61 @@
         .Modal-Slider-Btn.Right {
             right: 20%;
         }
-   
-        
 
-        .Modal-Slide {
-            height: 100%;
-            width: 850px;
-            @include flexCenter(row);
-            background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
-            margin: 0 auto;
-            position: relative;
-            
-
-
-            .Modal-Slide-Content-Left {
-               height: 100%;
-                
-                
-                img {
-                    height: 100%;
-                    
-                }
-            }
-
-            .Modal-Slide-Content-Right {
-                height: 80%;
-
-                .Modal-Slide-Content-Right-Text {
-                    width: 90%;
-                    margin: 0 auto;
-
-                    h1 {
-                        font-size: 24px;
-                        padding-bottom: 0.5rem;
-                    }
-
-                    p {
-                        color: $greyText;
-                    }
-                }
-                
-            }
-
+        .Modal-Slides-Container {
            
 
 
-
-            .ModalClose-Btn {
-                position: absolute;
-                top: 0;
-                right: 0;
-                margin-top: 1rem;
-                margin-right: 1rem;
-                font-size: 2rem;
-                border-radius: 50%;
-                width: 50px;
-                height: 50px;
-                background: none;
-                border: none;
-                cursor: pointer;
-                transition: background 0.4s ewa;
-            }
-            .ModalClose-Btn:hover {
-                background-color: $greybackground ;
-            }
-
-            .ModalClose-Btn:focus {
-                outline: none;
-            }
-
         }
+
+        .rec-arrow-right {
+            margin-right: 5rem;
+        }
+
+        .rec-arrow-left {
+            margin-left: 5rem;
+        }
+
+
+        .rec.rec-arrow {
+            background-color:rgba($greybackground, 0.2);
+            color: white;
+           
+            box-shadow: none;
+            
+        
+            
+        
+        }
+
+      
+        .rec.rec-arrow:hover {
+            box-shadow: 0 0 5px 0px $greybackground;
+        }
+
+        .rec.rec-arrow:disabled {
+            visibility: hidden;
+            
+        }
+
+        .rec.rec-dot {
+            box-shadow: none;
+            background-color: rgba($greybackground, 0.3);
+        }
+
+        .rec.rec-dot_active {
+            background-color: white;
+            box-shadow: none;
+        }
+
+        
+
+
+        
+   
+        
+
+       
     }
     
 }

@@ -6,7 +6,8 @@ import modalReducer from './modalReducer';
 
    
 const initialState = {
-    showing: false
+    showing: false,
+    content: []
 }
 
 
@@ -27,6 +28,13 @@ export const ModalProvider = ({children}) => {
         })
     }
 
+    function loadModalContent(content) {
+        dispatch({
+            type: 'LOAD_CONTENT',
+            payload: content
+        })
+    }
+
  
 
 
@@ -36,7 +44,9 @@ export const ModalProvider = ({children}) => {
         <ModalContext.Provider
             value={{
                 showing: state.showing,
-                showModal
+                content: state.content,
+                showModal,
+                loadModalContent
 
             }}
         >

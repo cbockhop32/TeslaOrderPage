@@ -5,11 +5,15 @@ import {CurrentSlideContext} from '../../context/CurrentSlideContext';
 import {ModalContext} from '../../context/ModalContext';
 import InteriorBlack from '../../Imgs/InteriorBlack.png';
 import InteriorWhite from '../../Imgs/InteriorWhite.png';
+import {interiorModal} from '../../helper/modalcontent';
 
 function Interior() {
     const {currentInterior, changeInterior} = useContext(CurrentSelctionContext);
     const { changeSlide  } = useContext(CurrentSlideContext);
-    const {showModal} = useContext(ModalContext);
+    const {showModal, loadModalContent} = useContext(ModalContext);
+
+
+    
 
 
     let interiorDetails;
@@ -51,7 +55,7 @@ function Interior() {
             </div>
 
             <div className="Interior-Details-Container">
-                <button className="Feature-Details-Btn" onClick={() => showModal(true)}>Feature Details</button>
+                <button className="Feature-Details-Btn" onClick={() => {showModal(true); loadModalContent(interiorModal)}}>Feature Details</button>
 
             </div>
 

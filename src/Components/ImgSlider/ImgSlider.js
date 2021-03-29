@@ -4,6 +4,7 @@ import './ImgSlider.scss';
 import {carImages } from '../../helper/carimages';
 import {CurrentSelctionContext} from '../../context/CurrentSelection';
 import {CurrentSlideContext} from '../../context/CurrentSlideContext';
+import {ModalContext} from '../../context/ModalContext';
 
 
 function ImgSlider() {
@@ -11,6 +12,7 @@ function ImgSlider() {
  
     const { currentColor, currentWheels, currentInterior, currentPowerTrain  } = useContext(CurrentSelctionContext);
     const { currentSlide, changeSlide  } = useContext(CurrentSlideContext);
+    const { showing } = useContext(ModalContext);
 
 
 
@@ -50,14 +52,14 @@ function ImgSlider() {
 
     return (
         <div className="ImgSlider">
-                <div class={currentSlide !== 0 ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleBack()} style={{marginLeft: '1rem'}}>
+                <div class={currentSlide !== 0 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleBack()} style={{marginLeft: '1rem'}}>
                     <i className="fas fa-chevron-left"></i>
                 </div>
             <div className="ImgSlider-Container">
               <img src={imgList[currentSlide]} className="Slide" />
             </div>
 
-                <div class={currentSlide !== 4 ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleForward()} style={{marginRight: '1rem'}}>
+                <div class={currentSlide !== 4 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleForward()} style={{marginRight: '1rem'}}>
                     <i className="fas fa-chevron-right"></i>
                 </div>
                 

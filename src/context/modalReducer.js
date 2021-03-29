@@ -6,8 +6,16 @@ export default(state, action) => {
             }
 
 
+    
+        case 'LOAD_CONTENT':
+            return {
+                content: action.payload
+            }
+
+
             default: 
-             return state;
+                return state;
+            
                 
             
     }
