@@ -18,7 +18,9 @@ import powertrain6 from '../Imgs/Modal/powertrain/powertrain6.jpeg'
 // Self Driving Videos
 
 import selfdriving1 from '../Imgs/Modal/selfdriving/selfdriving.mp4';
-
+import selfdriving2 from '../Imgs/Modal/selfdriving/selfdriving2.mp4';
+import selfdriving3 from '../Imgs/Modal/selfdriving/selfdriving3.mp4';
+import selfdriving4 from '../Imgs/Modal/selfdriving/selfdriving4.mp4';
 
 
 // Interior Content
@@ -104,6 +106,24 @@ export const selfDrivingModal = [
         vid: selfdriving1,
         title: 'Auto Lane Change',
         details: 'While driving on the highway, Automatic Lane Change will position your car in the optimal lane to prepare for merges and exits while overtaking slow cars. Drivers are given clear insight to upcoming lane changes as well as customization to Auto Lane Change functionality.'
+
+    },
+    {
+        vid: selfdriving2,
+        title: 'Navigate on Autopilot',
+        details: 'Automatic driving from highway on-ramp to off-ramp includes automatic lane changes, Traffic-Aware Cruise Control with complete stopping and re-engagement, Autosteer, and overtaking slow cars in your lane.'
+
+    },
+    {
+        vid: selfdriving3,
+        title: 'Autopark',
+        details: 'Park with ease in both parallel and perpendicular parking spaces with a single button tap on the Center Display. Model 3 will alert you to available parking spots by continuously monitoring the space around you while driving under 15 mph.'
+
+    },
+    {
+        vid: selfdriving4,
+        title: 'Summon',
+        details: 'Activated by the Tesla App, your parked car will come find you anywhere in a parking lot, and even park or unpark itself in tight spaces. Summon navigates complex parking situations while abiding by lane markings and stop signs, avoiding pedestrians and obstacles like traffic cones, trash bins and rogue shopping carts.'
 
     }
 ]

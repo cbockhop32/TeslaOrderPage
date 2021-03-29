@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './LeftContent.scss';
 import ImgSlider from '../ImgSlider/ImgSlider';
+import Price from '../Price/Price';
 import { CurrentSelctionContext } from '../../context/CurrentSelection';
 
 
@@ -12,8 +13,8 @@ function LeftContent() {
 
     return (
         <div className="LeftContent">
-            {/* <h1>{currentColor}{currentWheels}{currentInterior}</h1> */}
             <ImgSlider />
+            <Price />
         </div>
     )
 }
