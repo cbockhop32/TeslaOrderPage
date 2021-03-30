@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import {ModalContext} from '../../context/ModalContext';
 import './Modal.scss';
 import ModalSlide from '../ModalSlide/ModalSlide';
+import ModalSlideOrder from '../ModalSlideOrder/ModalSlideOrder';
 import Carousel from 'react-elastic-carousel';
 import ModalSlideDriving from '../ModalSlideDriving/ModalSlideDriving';
 
 
 
 function Modal() {
-    const { showing, content, selfDrivingToggle, showModal,setSelfDriving } = useContext(ModalContext);
+    const { showing, content, selfDrivingToggle, showModal,setSelfDriving, orderToggle } = useContext(ModalContext);
 
 
     // For window resizing
@@ -40,9 +41,22 @@ function Modal() {
         modalSlides = content.map(item => <ModalSlideDriving showModal={showModal} setSelfDriving={setSelfDriving} content={item}  />)
     }
 
-    if(!selfDrivingToggle) {
+    // If self driving is not toggled then display normal modal slide
+
+    // May be able to use normal modal sldie for order page **********
+
+    
+
+    if(orderToggle) {
+        modalSlides = <ModalSlideOrder />
+    }
+
+    if(!selfDrivingToggle && !orderToggle) {
         modalSlides = content.map(item => <ModalSlide showModal={showModal} content={item}  />)
     } 
+
+
+
     
     
 

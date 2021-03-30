@@ -81,3 +81,30 @@
 %detailsBtn:focus {
     outline: none;
 }
+
+
+%modalClose-Btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: background 0.4s ease;
+}
+
+
+%modalClose-Btn:hover {
+    background-color: $greybackground ;
+}
+
+
+%modalClose-Btn:focus {
+    outline: none;
+}

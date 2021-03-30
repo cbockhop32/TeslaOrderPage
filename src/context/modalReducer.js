@@ -23,6 +23,16 @@ export default(state, action) => {
                 }
 
 
+            case 'ORDER_TOGGLE':
+                return {
+                    ...state,
+                    orderToggle: action.payload
+                }
+
+
+
+
+
             default: 
                 return state;
             

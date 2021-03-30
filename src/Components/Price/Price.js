@@ -4,11 +4,11 @@ import {calculatePrice, numberWithCommas} from '../../helper/calculatePrice';
 import './Price.scss';
 
 function Price() {
-    const {currentColor, currentPowerTrain, currentWheels, currentInterior} = useContext(CurrentSelctionContext);
+    const {currentColor, currentPowerTrain, currentWheels, currentInterior, selfDriving} = useContext(CurrentSelctionContext);
 
-    
+    const selfDrivingAdd = selfDriving ? 10000 : 0;
 
-    const totalPrice = calculatePrice(currentPowerTrain, currentColor, currentWheels, currentInterior).reduce((cv, acc) => acc +cv,0);
+    const totalPrice = calculatePrice(currentPowerTrain, currentColor, currentWheels, currentInterior).reduce((cv, acc) => acc +cv,0) + selfDrivingAdd;
     console.log(totalPrice)
 
     return (

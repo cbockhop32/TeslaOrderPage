@@ -1,0 +1,71 @@
+@import '../../Styles/btns';
+@import '../../Styles/utils';
+
+
+.Modal-SlideOrder {
+    @extend %modal;
+    @include flexCenter(column);
+    justify-content: flex-start;
+    position: relative;
+
+
+    .Modal-SLideOrder-Title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        padding-top: 2rem;
+        color: $blackText;
+    }
+    
+
+
+    .Modal-SlideOrder-Content-Left {
+       height: 75%;
+       width: 100%;
+       @include flexCenter(column);
+       justify-content: space-evenly;
+       overflow: hidden;
+        
+        
+        img {
+            height: 100%;
+            transform: scale(1.5);
+            
+          
+            
+        }
+    }
+
+    .Modal-SlideOrder-Content-Right {
+       
+        width: 100%;
+
+        .Modal-SlideOrder-Content-Right-Text {
+            width: 90%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 24px;
+                padding-bottom: 0.5rem;
+            }
+
+            p {
+                color: $greyText;
+            }
+        }
+        
+    }
+
+   
+
+
+
+    .ModalClose-Btn {
+        @extend %modalClose-Btn
+    }
+   
+
+}
+

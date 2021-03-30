@@ -51,6 +51,12 @@
             
         }
 
+        .SelfDriving-Btn-Remove {
+            @extend %detailsBtn;
+            width: 150px;
+
+        }
+
         .Feature-Details-Btn {
             @extend %detailsBtn;
             

@@ -1,7 +1,23 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {CurrentSelctionContext} from '../../context/CurrentSelection';
 import './ModalSlideDriving.scss';
 
 function ModalSlideDriving({showModal, content,setSelfDriving}) {
+
+    const {changeSelfDriving, selfDriving} = useContext(CurrentSelctionContext);
+
+    let addBtn;
+
+    if(!selfDriving) {
+        addBtn = <button className="SelfDriving-Btn-Add" onClick={() => changeSelfDriving(!selfDriving)}>Add</button>
+    } 
+
+    if(selfDriving) {
+        addBtn = <button className="SelfDriving-Btn-Remove" onClick={() => changeSelfDriving(!selfDriving)}>Remove</button>
+    }
+
+
+
     return (
         <div className="Modal-SlideDriving">
             <div className="Modal-Slide-Content-Left">
@@ -14,6 +30,12 @@ function ModalSlideDriving({showModal, content,setSelfDriving}) {
                     {content.details}
                     </p>
                 </div>
+                <div className="Modal-Slide-Content-Right-Add">
+                    <strong>Full Self-Driving Capability</strong>
+                    <p>$10,000</p>
+                    {addBtn}
+                </div>
+                
                 
             </div>
             

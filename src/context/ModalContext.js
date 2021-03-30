@@ -8,6 +8,7 @@ import modalReducer from './modalReducer';
 const initialState = {
     showing: false,
     selfDrivingToggle: false,
+    orderToggle: false,
     content: []
 }
 
@@ -44,6 +45,14 @@ export const ModalProvider = ({children}) => {
 
     }
 
+    function setOrderToggle(orderToggle) {
+        dispatch({
+            type: 'ORDER_TOGGLE',
+            payload: orderToggle
+        })
+
+    }
+
  
 
 
@@ -54,10 +63,12 @@ export const ModalProvider = ({children}) => {
             value={{
                 showing: state.showing,
                 selfDrivingToggle: state.selfDrivingToggle,
+                orderToggle: state.orderToggle,
                 content: state.content,
                 showModal,
                 loadModalContent,
-                setSelfDriving
+                setSelfDriving,
+                setOrderToggle
 
             }}
         >

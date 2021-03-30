@@ -1,10 +1,24 @@
 import React, {useContext} from 'react';
 import {ModalContext} from '../../context/ModalContext';
+import {CurrentSelctionContext } from '../../context/CurrentSelection';
 import {selfDrivingModal} from '../../helper/modalcontent';
 import './SelfDriving.scss';
 
 function SelfDriving() {
     const {showModal, loadModalContent,setSelfDriving} = useContext(ModalContext);
+    const {changeSelfDriving, selfDriving} = useContext(CurrentSelctionContext);
+
+
+    let addBtn;
+
+    if(!selfDriving) {
+        addBtn = <button className="SelfDriving-Btn-Add" onClick={() => changeSelfDriving(!selfDriving)}>Add</button>
+    } 
+
+    if(selfDriving) {
+        addBtn = <button className="SelfDriving-Btn-Remove" onClick={() => changeSelfDriving(!selfDriving)}>Remove</button>
+    }
+
 
 
     return (
@@ -33,7 +47,7 @@ function SelfDriving() {
                 </div>
 
                 <div className="SelfDriving-Btns">
-                    <button className="SelfDriving-Btn-Add">Add</button>
+                    {addBtn}
                     <button className="Feature-Details-Btn" onClick={() => {showModal(true);setSelfDriving(true); loadModalContent(selfDrivingModal)}}>Feature Details</button>
 
                 </div>

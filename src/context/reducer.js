@@ -28,6 +28,12 @@ export default(state, action) => {
                 interior: action.payload
             }
 
+            case 'CHANGE_SELFDRIVING':
+                return {
+                    ...state,
+                    selfdriving: action.payload
+                }
+
            
 
 

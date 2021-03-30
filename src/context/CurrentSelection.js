@@ -6,7 +6,8 @@ const initialState = {
     color: 'white',
     powertrain: 'standard',
     wheels: 'aero',
-    interior: 'black'
+    interior: 'black',
+    selfdriving: false
 }
 
 
@@ -54,6 +55,17 @@ export const CurrentSelectionProvider = ({children}) => {
     }
 
 
+       // Switch Self Driving
+
+       function changeSelfDriving(selfdriving) {
+        dispatch({
+            type:'CHANGE_SELFDRIVING',
+            payload: selfdriving
+        })
+    }
+
+
+
 
     
 
@@ -64,10 +76,12 @@ export const CurrentSelectionProvider = ({children}) => {
                 currentPowerTrain: state.powertrain,
                 currentWheels: state.wheels,
                 currentInterior: state.interior,
+                selfDriving: state.selfdriving,
                 changePaint,
                 changePowerTrain,
                 changeWheels,
-                changeInterior
+                changeInterior,
+                changeSelfDriving
 
             }}
         >

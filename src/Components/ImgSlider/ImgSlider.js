@@ -26,7 +26,7 @@ function ImgSlider() {
     if(car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior) {
         imgList = car.images
     }
- })
+        })
 
 
 
@@ -52,7 +52,7 @@ function ImgSlider() {
 
     return (
         <div className="ImgSlider">
-                <div class={currentSlide !== 0 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleBack()} style={{marginLeft: '1rem'}}>
+                <div className={currentSlide !== 0 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleBack()} style={{marginLeft: '1rem'}}>
                     <i className="fas fa-chevron-left"></i>
                 </div>
             <div className="ImgSlider-Container">

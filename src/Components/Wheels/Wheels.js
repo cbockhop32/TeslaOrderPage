@@ -5,21 +5,26 @@ import WheelsAero from '../../Imgs/WheelsAero.png';
 import WheelsSport from '../../Imgs/WheelsSport.png';
 import WheelsPerformance from '../../Imgs/WheelsPerformance.png';
 import './Wheels.scss';
+import ResetSlides from '../../hooks/ResetSlides';
 
 function Wheels() {
-
+    const [slideReset] = ResetSlides();
     const {currentWheels, changeWheels, currentPowerTrain } = useContext(CurrentSelctionContext);  
-    const { changeSlide  } = useContext(CurrentSlideContext);
+  
 
     let wheelOptions;
     let wheelDetails;
+
+
+   
+
 
     if(currentPowerTrain === 'performance') {
         wheelOptions = (
             <div className="Wheels-Selector">
                 <div className="Wheels-Option">
                     <input checked={currentWheels === 'performance'} type="radio" role="button" name="wheels" id="wheelsPerformance"></input>
-                    <label htmlFor="wheelsPerformance" className="Wheels-Label"  ><img src={WheelsPerformance} alt="wheelsPerformance"></img></label>
+                    <label htmlFor="wheelsPerformance" className="Wheels-Label"   ><img src={WheelsPerformance} alt="wheelsPerformance"></img></label>
                 </div>
             </div>
         )
@@ -30,12 +35,12 @@ function Wheels() {
             <div className="Wheels-Selector">
                 <div className="Wheels-Option">
                     <input checked={currentWheels === 'aero'} type="radio" role="button" name="wheels" id="wheelsAero"></input>
-                    <label htmlFor="wheelsAero" className="Wheels-Label" onClick={() => {changeWheels('aero')}} ><img src={WheelsAero} alt="wheelsAero"></img></label>
+                    <label htmlFor="wheelsAero" className="Wheels-Label" onClick={() => {changeWheels('aero');slideReset()}} ><img src={WheelsAero} alt="wheelsAero"></img></label>
                 </div>
 
                 <div className="Wheels-Option">
                     <input checked={currentWheels === 'sport'} type="radio" role="button" name="wheels" id="wheelsSport"></input>
-                    <label htmlFor="wheelsSport" className="Wheels-Label" onClick={() => {changeWheels('sport')}} ><img src={WheelsSport} alt="wheelsSport"></img></label>
+                    <label htmlFor="wheelsSport" className="Wheels-Label" onClick={() => {changeWheels('sport');slideReset()}} ><img src={WheelsSport} alt="wheelsSport"></img></label>
                 </div>
             </div>
         )

@@ -3,24 +3,13 @@
 
 
 .Modal-SlideDriving {
-    height: 550px;
-    
-    width: 850px;
-    min-width: 850px;
-    @include flexCenter(row);
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    // margin: 0 auto;
-    margin: 0 2rem;
-    position: relative;
-    // transform: translateX(50%);
+   @extend %modal;
     
 
 
     .Modal-Slide-Content-Left {
        height: 100%;
-    @include flexCenter(column);
+        @include flexCenter(column);
       
         
         
@@ -34,6 +23,8 @@
 
     .Modal-Slide-Content-Right {
         height: 80%;
+        @include flexCenter(column);
+        justify-content: space-between;
 
         .Modal-Slide-Content-Right-Text {
             width: 90%;
@@ -48,6 +39,36 @@
                 color: $greyText;
             }
         }
+
+        .Modal-Slide-Content-Right-Add {
+            text-align: center;
+            
+
+          
+            p {
+                padding-bottom: 2rem;
+                padding-top: 0.5rem;
+             
+            }
+
+            .SelfDriving-Btn-Add {
+                @extend %detailsBtn;
+                background-color: $btnSelelected;
+                color: white;
+                width: 150px;
+                
+            }
+    
+            .SelfDriving-Btn-Remove {
+                @extend %detailsBtn;
+                width: 150px;
+    
+            }
+
+        }
+
+
+
         
     }
 
@@ -56,26 +77,8 @@
 
 
     .ModalClose-Btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 1rem;
-        margin-right: 1rem;
-        font-size: 2rem;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        transition: background 0.4s ease;
+       @extend %modalClose-Btn
     }
-    .ModalClose-Btn:hover {
-        background-color: $greybackground ;
-    }
-
-    .ModalClose-Btn:focus {
-        outline: none;
-    }
+  
 
 }

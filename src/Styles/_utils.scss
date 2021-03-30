@@ -21,3 +21,22 @@ $btnSelelected: #3e6ae1;
 %RightContent-Child {
     height: 40vh;
 }
+
+
+// Modal Slide Styling (Main Container)
+
+%modal {
+    height: 550px;
+    width: 850px;
+    min-width: 850px;
+    @include flexCenter(row);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 2rem;
+    position: relative;
+    
+    
+}
+
+
