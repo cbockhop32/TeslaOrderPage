@@ -1,11 +1,52 @@
-
+@import '../../Styles/btns';
+@import '../../Styles/utils';
 
 .Price {
    
  
     position: fixed;
-    background-color: red;
+    background-color: $greybackground;
     bottom: 0;
     left: 50%;
     transform: translateX(-100%);
+   
+    width: 550px;
+
+    height: 72px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    .Price-Container {
+
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+
+        strong {
+            color: $blackText;
+        }
+
+
+      
+
+        span {
+            color: $greyText;
+            font-size: 25px;
+        }
+
+        p {
+            color: $greyText;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+
+
+       
+    }
+ 
+
+
+   
 }

@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {CurrentSelctionContext} from '../../context/CurrentSelection';
+import {calculatePrice, numberWithCommas} from '../../helper/calculatePrice';
 import './Price.scss';
 
 function Price() {
+    const {currentColor, currentPowerTrain, currentWheels, currentInterior} = useContext(CurrentSelctionContext);
+
+    
+
+    const totalPrice = calculatePrice(currentPowerTrain, currentColor, currentWheels, currentInterior).reduce((cv, acc) => acc +cv,0);
+    console.log(totalPrice)
+
     return (
         <div className="Price">
             <div className="Price-Container">
-                <div>
-                    <strong>$50,000</strong>
-                </div>
+                
+                    <strong>${numberWithCommas(totalPrice)} Purchase Price</strong> 
+                    <span>|</span>  
+                    <p>${numberWithCommas(totalPrice- 6300)} after potential savings</p>
+           
 
-                <div>
-                    <p>$50,190 after potential savings</p>
-                </div>
+               
                 
             </div>
            
