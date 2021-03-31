@@ -14,14 +14,9 @@ function Price() {
     return (
         <div className="Price">
             <div className="Price-Container">
-                
                     <strong>${numberWithCommas(totalPrice)} Purchase Price</strong> 
                     <span>|</span>  
-                    <p>${numberWithCommas(totalPrice- 6300)} after potential savings</p>
-           
-
-               
-                
+                    <p>${numberWithCommas(totalPrice- 6300)} after potential savings</p> 
             </div>
            
         </div>

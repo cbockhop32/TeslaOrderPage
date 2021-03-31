@@ -23,13 +23,7 @@ function Modal() {
     ]
 
 
-
-  
-    
-
-
     if(showing === false) return null;
-
 
 
 // Renders Slides for Images or Renders Slides for Self Driving Section w/ videos
@@ -44,7 +38,6 @@ function Modal() {
 
 
 
-    
 
     if(orderToggle) {
         modalSlides = <ModalSlideOrder />
@@ -53,12 +46,6 @@ function Modal() {
     if(!selfDrivingToggle && !orderToggle) {
         modalSlides = content.map(item => <ModalSlide showModal={showModal} content={item} key={item.title}  />)
     } 
-
-
-
-    
-    
-
 
 
 
@@ -75,16 +62,9 @@ function Modal() {
                 breakPoints={breakPoints}
                 dotListClass="dots"
                 >
-
-                {modalSlides}
-
-    
+                    {modalSlides}
                 </Carousel>
-               
-
-
-            
-
+        
             </div>
         </div>,
         document.getElementById('portal')

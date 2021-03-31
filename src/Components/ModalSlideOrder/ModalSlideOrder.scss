@@ -72,21 +72,11 @@
 
             
         }
-
-
-      
-        
     }
-
-   
-
-
 
     .ModalClose-Btn {
         @extend %modalClose-Btn
     }
-   
-
 }
 
 
@@ -99,15 +89,9 @@
             font-size: 1.7rem;
         }
     
-   
-        
-    
-    
         .Modal-SlideOrder-Content-Left {
            height: 40%;
       
-          
-
            img {
            
             transform: scale(1.3);
@@ -119,27 +103,27 @@
 
 
         
-        .Modal-SlideOrder-Content-Right-Text {
-         
+            .Modal-SlideOrder-Content-Right-Text {
+            
 
-        
+            
 
-            .Order-Btn {
-              
-              
-                width: 250px;
-               
-                height: 50px;
-                font-size: 16px;
+                .Order-Btn {
+                
+                
+                    width: 250px;
+                
+                    height: 50px;
+                    font-size: 16px;
 
-                a {
-                    color: white;
-                   
+                    a {
+                        color: white;
+                    
+                    }
                 }
             }
-        }
 
-    }
+        }
        
 
 

@@ -18,13 +18,8 @@ function PowerTrain() {
 
     return (
      
-
-                
-
         <div className="Powertrain">
-                {/* Power Train Section */}
-
-
+               
             <div className="Powertrain-RearWheel">
                 <h4>Rear-Wheel Drive</h4>
                 <div>

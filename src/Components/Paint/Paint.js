@@ -16,11 +16,6 @@ function Paint() {
     const [slideReset] = ResetSlides();
    
 
-
-
-   
-
-
     let paintDetails;
 
     if(currentColor === 'white') {
@@ -52,9 +47,6 @@ function Paint() {
             <p><strong>Red Multi-Coat</strong> $2,000</p>
         )
     }
-
-
-
 
 
     return (

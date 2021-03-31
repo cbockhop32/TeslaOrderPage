@@ -14,8 +14,6 @@ export const CurrentSlideContext = createContext(initialState)
 export const CurrentSlideProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
-
-
   
     // Switch Slide
 
@@ -27,9 +25,6 @@ export const CurrentSlideProvider = ({children}) => {
     }
 
  
-
-
-    
 
     return (
         <CurrentSlideContext.Provider

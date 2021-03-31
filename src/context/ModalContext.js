@@ -3,8 +3,6 @@ import modalReducer from './modalReducer';
 
 
 
-
-   
 const initialState = {
     showing: false,
     selfDrivingToggle: false,
@@ -54,10 +52,6 @@ export const ModalProvider = ({children}) => {
     }
 
  
-
-
-    
-
     return (
         <ModalContext.Provider
             value={{

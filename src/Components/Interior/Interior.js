@@ -13,9 +13,6 @@ function Interior() {
     const {showModal, loadModalContent} = useContext(ModalContext);
 
 
-    
-
-
     let interiorDetails;
 
     if(currentInterior === 'black') {
@@ -46,9 +43,6 @@ function Interior() {
                     <label htmlFor="interiorWhite" className="Interior-Label" onClick={() => {changeInterior('white'); changeSlide(4) }} ><img src={InteriorWhite} alt="InteriorWhite"></img></label>
                 </div>
 
-               
-
-
             </div>
             <div >
                 {interiorDetails}
@@ -59,8 +53,7 @@ function Interior() {
 
             </div>
 
-           
-        
+
     </div>
     )
 }

@@ -7,19 +7,12 @@
     height: 95%;
     position: relative;
  
-  
-
-
- 
-  
 }
 
 
 @media (max-width: $laptop) {
     .LeftContent {
         height: 65%;
-        // max-height: 65%;
-        // overflow: hidden;
-        
+     
     }
 }

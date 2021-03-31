@@ -5,12 +5,7 @@ import {carImages} from '../../helper/carimages';
 function Slides({slideNum}) {
     const { currentColor, currentPowerTrain, currentWheels, currentInterior  } = useContext(CurrentSelctionContext);
 
-
-
     let imgList;
-
-
-
 
    carImages.forEach(car => {
     if(car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior) {
@@ -18,19 +13,10 @@ function Slides({slideNum}) {
     }
  })
     
-    
-   
 
-
-
-    
-    
+  
     return (
-
         <div style={{backgroundImage:`url(${imgList[slideNum]})`, backgroundSize:"cover", height: '100%'}}></div>
-      
-   
-    
     )
 }
 

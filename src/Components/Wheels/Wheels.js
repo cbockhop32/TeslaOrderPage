@@ -15,9 +15,6 @@ function Wheels() {
     let wheelDetails;
 
 
-   
-
-
     if(currentPowerTrain === 'performance') {
         wheelOptions = (
             <div className="Wheels-Selector">
@@ -63,11 +60,6 @@ function Wheels() {
             <p><strong>20" Uberturbine Wheels</strong> Included</p>
         )
     }
-
-
-
-    
-
 
 
     return (

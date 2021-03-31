@@ -9,13 +9,9 @@ import {ModalContext} from '../../context/ModalContext';
 
 function ImgSlider() {
 
- 
     const { currentColor, currentWheels, currentInterior, currentPowerTrain  } = useContext(CurrentSelctionContext);
     const { currentSlide, changeSlide  } = useContext(CurrentSlideContext);
     const { showing } = useContext(ModalContext);
-
-
-
 
     let imgList;
 

@@ -2,8 +2,6 @@
 
 
 .RightContent {
-
-    // flex: 1;
     width: 320px;
     margin-right: 3rem;
     @include flexCenter(column);
@@ -13,10 +11,6 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
    
-   
- 
-    
-
   
 
     .RightContent-Content {

@@ -17,11 +17,8 @@ function MainContainer() {
                     <ModalProvider>
                         <LeftContent />
                         <RightContent />
-
                        <Modal/>
-
                     </ModalProvider>
-                   
                 </CurrentSlideProvider>
             </CurrentSelectionProvider>
            

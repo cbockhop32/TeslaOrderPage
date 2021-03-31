@@ -6,10 +6,6 @@ import Price from '../Price/Price';
 
 
 function LeftContent() {
-
-    
-
-
     return (
         <div className="LeftContent">
             <ImgSlider />

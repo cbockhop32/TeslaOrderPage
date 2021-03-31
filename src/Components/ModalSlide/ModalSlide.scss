@@ -3,14 +3,10 @@
 
 
 .Modal-Slide {
-
     @extend %modal;
     
-
-
     .Modal-Slide-Content-Left {
        height: 100%;
-        
         
         img {
             height: 100%;
@@ -38,9 +34,6 @@
     }
 
    
-
-
-
     .ModalClose-Btn {
         @extend %modalClose-Btn
     }
@@ -49,15 +42,9 @@
 
 
 
-
 @media (max-width: $tabletModal) {
 
     .Modal-Slide {
-
-      
-        
-    
-    
         .Modal-Slide-Content-Left {
            height:100%;
            overflow: hidden;
@@ -67,8 +54,6 @@
             
             img {
                 transform: scale(1.4);
-                
-               
                 
             }
         }
