@@ -17,7 +17,7 @@ function ModalSlide({showModal, content}) {
                 
             </div>
             
-            <button className="ModalClose-Btn" onClick={() => showModal(false)}><i class="fas fa-times"></i></button>
+            <button className="ModalClose-Btn" onClick={() => showModal(false)}><i className="fas fa-times"></i></button>
         
         </div>
 

@@ -39,7 +39,7 @@ function ModalSlideDriving({showModal, content,setSelfDriving}) {
                 
             </div>
             
-            <button className="ModalClose-Btn" onClick={() => {showModal(false); setSelfDriving(false)}}><i class="fas fa-times"></i></button>
+            <button className="ModalClose-Btn" onClick={() => {showModal(false); setSelfDriving(false)}}><i className="fas fa-times"></i></button>
         
         </div>
     )

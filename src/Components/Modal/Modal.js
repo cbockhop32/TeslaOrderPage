@@ -31,19 +31,18 @@ function Modal() {
     if(showing === false) return null;
 
 
-    console.log(content);
 
 // Renders Slides for Images or Renders Slides for Self Driving Section w/ videos
 
     let modalSlides;
 
     if(selfDrivingToggle){
-        modalSlides = content.map(item => <ModalSlideDriving showModal={showModal} setSelfDriving={setSelfDriving} content={item}  />)
+        modalSlides = content.map(item => <ModalSlideDriving showModal={showModal} setSelfDriving={setSelfDriving} content={item} key={item.title}   />)
     }
 
     // If self driving is not toggled then display normal modal slide
 
-    // May be able to use normal modal sldie for order page **********
+
 
     
 
@@ -52,7 +51,7 @@ function Modal() {
     }
 
     if(!selfDrivingToggle && !orderToggle) {
-        modalSlides = content.map(item => <ModalSlide showModal={showModal} content={item}  />)
+        modalSlides = content.map(item => <ModalSlide showModal={showModal} content={item} key={item.title}  />)
     } 
 
 
