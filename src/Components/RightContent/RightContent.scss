@@ -3,15 +3,13 @@
 
 .RightContent {
 
-    flex: 1;
+    // flex: 1;
+    width: 320px;
     margin-right: 3rem;
     @include flexCenter(column);
     justify-content: flex-start;
     height: 90vh;
-    
-    
     overflow-y: scroll;
-
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
    
@@ -93,4 +91,15 @@
 
 .RightContent::-webkit-scrollbar {
     display: none;
+}
+
+
+
+@media (max-width: $laptop) {
+    .RightContent {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
 }

@@ -4,11 +4,11 @@
 .Price {
    
  
-    position: fixed;
+    position: absolute;
     background-color: $greybackground;
     bottom: 0;
     left: 50%;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
    
     width: 550px;
 
@@ -49,4 +49,53 @@
 
 
    
+}
+
+
+@media (max-width: $laptop) {
+
+    .Price {
+        position: fixed;
+        width: 400px;
+        height: 50px;
+
+        .Price-Container {
+            span {
+                font-size: 25px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+
+        }
+    }
+    
+}
+
+
+@media (min-width: $mobile) and (max-width: $mobileLarge) {
+    .Price {
+      
+        width: 350px;
+        height: 50px;
+        text-align: center;
+
+        .Price-Container {
+            @include flexCenter(row);
+            justify-content: space-evenly;
+            span {
+                font-size: 24px;
+            }
+
+            strong {
+                font-size: 14px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+
+        }
+    }
 }

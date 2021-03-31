@@ -69,3 +69,24 @@
 
     }
 }
+
+
+
+
+@media (max-width: $laptop) {
+    .SelfDriving {
+        .SelfDriving-Content {
+            .SelfDriving-Content-List {
+                align-items: center;
+                
+            }
+
+        }
+
+        .SelfDriving-Content {
+            text-align: center;
+        }
+
+
+    }
+}

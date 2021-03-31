@@ -3,18 +3,6 @@
 
 
 .Modal-Slide {
-    // height: 550px;
-    
-    // width: 850px;
-    // min-width: 850px;
-    // @include flexCenter(row);
-    // background-color: white;
-    // border-radius: 15px;
-    // overflow: hidden;
- 
-    // margin: 0 2rem;
-    // position: relative;
- 
 
     @extend %modal;
     
@@ -57,6 +45,36 @@
         @extend %modalClose-Btn
     }
    
+}
+
+
+
+
+@media (max-width: $tabletModal) {
+
+    .Modal-Slide {
+
+      
+        
+    
+    
+        .Modal-Slide-Content-Left {
+           height:100%;
+           overflow: hidden;
+           @include flexCenter(row);
+           
+            
+            
+            img {
+                transform: scale(1.4);
+                
+               
+                
+            }
+        }
+
+    }
+    
 }
 
 

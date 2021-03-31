@@ -37,7 +37,7 @@ function SelfDriving() {
                     <li>Traffic Light and Stop Sign Control</li>
                 </ul>
 
-                <div>
+                <div className="SelfDriving-Content">
                     <strong>Coming later this year</strong>
                     <ul className="SelfDriving-Content-List">
                         <li>Autosteer on city streets</li>

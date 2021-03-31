@@ -11,13 +11,8 @@
        height: 100%;
         @include flexCenter(column);
       
-        
-        
         .Slide-Video {
-            height: 50%;
-          
-          
-            
+            height: 50%;    
         }
     }
 
@@ -81,4 +76,34 @@
     }
   
 
+}
+
+
+
+@media (max-width: $tabletModal) {
+    .Modal-SlideDriving {
+         .Modal-Slide-Content-Left {
+            height: 50%;
+            
+         }
+         .Modal-Slide-Content-Right {
+            justify-content: space-evenly;
+
+            .Modal-Slide-Content-Right-Text {
+                text-align: center;
+            }
+
+            .Modal-Slide-Content-Right-Add {
+                p {
+                    padding-bottom: 0.5rem;
+                   
+                 
+                }
+    
+            
+
+            }
+
+         }
+    }    
 }

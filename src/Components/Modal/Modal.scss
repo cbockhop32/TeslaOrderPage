@@ -26,7 +26,7 @@
             top: 50%;
             transform: translate(-50%,-50%);
             z-index: 1000;
-            background-color: red;
+        
             height: 50px;
             width: 50px;
             @include flexCenter(row);
@@ -50,12 +50,7 @@
             right: 20%;
         }
 
-        .Modal-Slides-Container {
-           
-
-
-        }
-
+      
         .rec-arrow-right {
             margin-right: 5rem;
         }
@@ -106,4 +101,62 @@
        
     }
     
+}
+
+
+@media (max-width: $laptop) {
+    .Modal {
+        .Modal-Slider {
+         
+
+            .rec-arrow-right {
+                margin-right: 1rem;
+            }
+    
+            .rec-arrow-left {
+                margin-left: 1rem;
+            }
+    
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: $tablet) {
+    .Modal {
+        .Modal-Slider {
+         
+
+            .rec-arrow-right {
+                display: none;
+            }
+    
+            .rec-arrow-left {
+                display: none;
+            }
+    
+
+        }
+
+    }
+}
+
+
+@media (min-width: $mobile) and (max-width: $mobileLarge) {
+    .Modal {
+      
+        justify-content: flex-start;
+    
+       
+    
+    
+        
+        .Modal-Slider {
+          
+            margin-top: 2rem;
+        }
+    }
 }

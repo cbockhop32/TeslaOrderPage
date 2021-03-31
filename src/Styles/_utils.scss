@@ -9,9 +9,12 @@ $btnSelelected: #3e6ae1;
 
 $mobile: 300px;
 $mobileLarge: 425px;
-$tablet: 900px;
-$laptop: 1025px;
+$tabletModal: 700px;
+$tablet: 990px;
+$laptop: 1200px;
 $mediumLaptop: 1630px;
+
+
 
 
 
@@ -37,7 +40,8 @@ $mediumLaptop: 1630px;
 %modal {
     height: 550px;
     width: 850px;
-    min-width: 850px;
+
+    min-width: 700px;
     @include flexCenter(row);
     background-color: white;
     border-radius: 15px;
@@ -47,5 +51,19 @@ $mediumLaptop: 1630px;
     
     
 }
+
+
+@media (max-width: $tabletModal) {
+    %modal {
+        min-width: 350px;
+        height: 650px;
+        max-height: 800px;
+        @include flexCenter(column);
+        
+    }
+}
+
+
+
 
 

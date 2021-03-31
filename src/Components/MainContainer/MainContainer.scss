@@ -16,4 +16,11 @@
     
     
 }
+
+
+@media (max-width: $laptop) {
+    .MainContainer {
+        flex-direction: column;
+    }
+}
   
