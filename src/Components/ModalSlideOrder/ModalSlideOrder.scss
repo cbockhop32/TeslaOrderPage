@@ -41,20 +41,39 @@
     .Modal-SlideOrder-Content-Right {
        
         width: 100%;
+        
 
         .Modal-SlideOrder-Content-Right-Text {
             width: 90%;
             margin: 0 auto;
+            @include flexCenter(column);
 
-            h1 {
-                font-size: 24px;
-                padding-bottom: 0.5rem;
+        
+
+            .Order-Btn {
+                @extend %detailsBtn;
+                background-color: $btnSelelected;
+              
+                width: 350px;
+                max-width: 350px;
+                height: 50px;
+                font-size: 16px;
+
+                a {
+                    color: white;
+                }
             }
 
-            p {
-                color: $greyText;
+            .Order-Btn:hover {
+                background-color: darken($btnSelelected, 10%);
             }
+
+
+            
         }
+
+
+      
         
     }
 

@@ -25,14 +25,12 @@ function ModalSlideOrder() {
                <h1 className="Modal-SLideOrder-Title">Your Model 3</h1>
             <div className="Modal-SlideOrder-Content-Left">
                 
-                <img src={imgSrc} ></img>
+                <img src={imgSrc} alt="ModalOrderImg" ></img>
             </div>
             <div className="Modal-SlideOrder-Content-Right">
                 <div className="Modal-SlideOrder-Content-Right-Text">
                     
-                    <ul>
-                        <li>gdsggds sdg sd</li>
-                    </ul>
+                    <button className="Order-Btn"><a href="https://www.tesla.com/model3/design#overview" target="_blank">Order at Tesla Store</a></button>
                    
                 </div>
                 

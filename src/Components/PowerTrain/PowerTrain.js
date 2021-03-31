@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './PowerTrain.scss';
 import {CurrentSelctionContext} from '../../context/CurrentSelection';
 import {ModalContext} from '../../context/ModalContext';
-import {CurrentSlideContext} from '../../context/CurrentSlideContext';
 import {powertrainModal} from '../../helper/modalcontent';
 import ResetSlides from '../../hooks/ResetSlides';
 
@@ -29,7 +28,7 @@ function PowerTrain() {
             <div className="Powertrain-RearWheel">
                 <h4>Rear-Wheel Drive</h4>
                 <div>
-                    <input checked={currentPowerTrain === 'standard'}  type="radio" name="powertrain" className="Powertrain-Option-Input" id="standard"></input>
+                    <input checked={currentPowerTrain === 'standard'}  type="radio" name="powertrain" className="Powertrain-Option-Input" id="standard" readOnly></input>
                     <label className="Powertrain-Option-Label" htmlFor="standard" onClick={() => {changePowerTrain('standard'); changeWheels('aero');slideReset()}}><span>Standard Range Plus</span><span>$39,990</span></label>
                 </div>
 
@@ -39,12 +38,12 @@ function PowerTrain() {
             <div className="Powertrain-AllWheel">
                 <h4>Dual Motor All-Wheel Drive</h4>
                 <div>
-                    <input checked={currentPowerTrain === 'long'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="long"></input>
+                    <input checked={currentPowerTrain === 'long'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="long" readOnly></input>
                     <label className="Powertrain-Option-Label" htmlFor="long" onClick={() => {changePowerTrain('long'); changeWheels('aero');slideReset()}}><span>Long Range</span><span>$46,490</span></label>
                 </div>
 
                 <div>
-                    <input checked={currentPowerTrain === 'performance'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="performance"></input>
+                    <input checked={currentPowerTrain === 'performance'} type="radio" name="powertrain" className="Powertrain-Option-Input" id="performance" readOnly></input>
                     <label className="Powertrain-Option-Label" htmlFor="performance" onClick={() => {changePowerTrain('performance'); changeWheels('performance');slideReset()}}><span>Performance</span><span>$55,990</span></label>
                 </div>
 

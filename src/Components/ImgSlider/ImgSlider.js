@@ -56,10 +56,10 @@ function ImgSlider() {
                     <i className="fas fa-chevron-left"></i>
                 </div>
             <div className="ImgSlider-Container">
-              <img src={imgList[currentSlide]} className="Slide" />
+              <img src={imgList[currentSlide]} className="Slide" alt="Slide" />
             </div>
 
-                <div class={currentSlide !== 4 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleForward()} style={{marginRight: '1rem'}}>
+                <div className={currentSlide !== 4 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleForward()} style={{marginRight: '1rem'}}>
                     <i className="fas fa-chevron-right"></i>
                 </div>
                 

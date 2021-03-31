@@ -23,7 +23,7 @@ function Interior() {
             <p><strong>All Black</strong> Included</p>
         )
     }
-
+ 
     if(currentInterior === 'white') {
         interiorDetails = (
             <p><strong>Black and White</strong> $1,000</p>
@@ -37,12 +37,12 @@ function Interior() {
 
             <div className="Interior-Selector">
                 <div className="Interior-Option">
-                    <input checked={currentInterior === 'black'} type="radio" role="button" name="interior" id="interiorBlack"></input>
+                    <input checked={currentInterior === 'black'} type="radio" role="button" name="interior" id="interiorBlack" readOnly></input>
                     <label htmlFor="interiorBlack" className="Interior-Label" onClick={() => {changeInterior('black'); changeSlide(4)}} ><img src={InteriorBlack} alt="InteriorBlack"></img></label>
                 </div>
 
                 <div className="Interior-Option">
-                    <input checked={currentInterior === 'white'} type="radio" role="button" name="interior" id="interiorWhite"></input>
+                    <input checked={currentInterior === 'white'} type="radio" role="button" name="interior" id="interiorWhite" readOnly></input>
                     <label htmlFor="interiorWhite" className="Interior-Label" onClick={() => {changeInterior('white'); changeSlide(4) }} ><img src={InteriorWhite} alt="InteriorWhite"></img></label>
                 </div>
 

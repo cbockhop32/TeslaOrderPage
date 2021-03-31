@@ -9,7 +9,7 @@ function Price() {
     const selfDrivingAdd = selfDriving ? 10000 : 0;
 
     const totalPrice = calculatePrice(currentPowerTrain, currentColor, currentWheels, currentInterior).reduce((cv, acc) => acc +cv,0) + selfDrivingAdd;
-    console.log(totalPrice)
+  
 
     return (
         <div className="Price">
