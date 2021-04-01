@@ -17,7 +17,7 @@
     .Modal-Slide-Content-Right {
         height: 80%;
         min-width: 155px;
-        overflow-y: scroll;
+        
 
         .Modal-Slide-Content-Right-Text {
             width: 90%;
@@ -58,6 +58,11 @@
                 transform: scale(1.4);
                 
             }
+        }
+
+
+        .Modal-Slide-Content-Right {
+            overflow-y: scroll;
         }
 
     }
