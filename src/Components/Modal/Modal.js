@@ -52,9 +52,6 @@ function Modal() {
     return ReactDOM.createPortal (
         <div className="Modal">
             <div className="Modal-Slider">
-
-
-
                 {/* THis will be a map of an array that is apssed in that will render Modal SLides */}
                 
                 <Carousel 

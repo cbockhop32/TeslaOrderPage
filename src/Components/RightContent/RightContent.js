@@ -7,6 +7,7 @@ import Interior from '../Interior/Interior';
 import SelfDriving from '../SelfDriving/SelfDriving';
 import Order from '../Order/Order';
 import './RightContent.scss';
+import CountUp from 'react-countup';
 
 function RightContent() {
     const {currentPowerTrain} = useContext(CurrentSelctionContext);
@@ -56,7 +57,7 @@ function RightContent() {
 
                     <div className="Highlights-Box"> 
                         <div className="Highlights-Box-MainText">
-                            <h2>{range}</h2>
+                            <h2><CountUp start={range-20} end={range}/></h2>
                             <p>mi</p>
                             
                         </div>
@@ -66,7 +67,7 @@ function RightContent() {
 
                     <div className="Highlights-Box">
                         <div className="Highlights-Box-MainText">
-                            <h2>{topSpeed}</h2>
+                            <h2><CountUp start={topSpeed-15} end={topSpeed}/></h2>
                             <p>mph</p>
                         </div>
                         <p>Top Speed</p>
@@ -74,7 +75,7 @@ function RightContent() {
 
                     <div className="Highlights-Box">
                         <div className="Highlights-Box-MainText">
-                            <h2>{zeroToSixty}</h2>
+                            <h2><CountUp start={zeroToSixty - 1.5} end={zeroToSixty} decimals={1} /> </h2>
                             <p>sec</p>
                         </div>
                         <p>Acceleration</p>
