@@ -13,6 +13,14 @@ import white4 from '../Imgs/white/white4.jpg';
     import WSW3 from '../Imgs/white/W-S-W-3.jpg';
     import WSW4 from '../Imgs/white/W-S-W-4.jpg';
 
+    // White / Long Range / Aero
+    import WLA1 from '../Imgs/long/white/white1LA.jpg'
+    import WLA3 from '../Imgs/long/white/white3LA.jpg'
+
+     // White / Long Range / Sports
+     import WLS1 from '../Imgs/long/white/white1LS.jpg'
+     import WLS3 from '../Imgs/long/white/white3LS.jpg'
+
 
     // White / Performance
     import WP1 from '../Imgs/performance/white/W1.jpg'
@@ -34,6 +42,15 @@ import white4 from '../Imgs/white/white4.jpg';
     import BSB2 from '../Imgs/black/B-S-B-2.jpg';
     import BSB3 from '../Imgs/black/B-S-B-3.jpg';
     import BSB4 from '../Imgs/black/B-S-B-4.jpg';
+
+
+      // Black/ Long Range / Aero
+      import BLA1 from '../Imgs/long/black/black1LA.jpg'
+      import BLA3 from '../Imgs/long/black/black3LA.jpg'
+  
+       // Black / Long Range / Sports
+       import BLS1 from '../Imgs/long/black/black1LS.jpg'
+       import BLS3 from '../Imgs/long/black/black3LS.jpg'
 
 
     // Black / Performance
@@ -59,6 +76,15 @@ import white4 from '../Imgs/white/white4.jpg';
      import SSB3 from '../Imgs/silver/S-S-B-3.jpg';
      import SSB4 from '../Imgs/silver/S-S-B-4.jpg';
 
+        // Silver/ Long Range / Aero
+        import SLA1 from '../Imgs/long/silver/silver1LA.jpg'
+        import SLA3 from '../Imgs/long/silver/silver3LA.jpg'
+    
+         // Silver / Long Range / Sports
+         import SLS1 from '../Imgs/long/silver/silver1LS.jpg'
+         import SLS3 from '../Imgs/long/silver/silver3LS.jpg'
+  
+
 
     //  Silver / Performance
 
@@ -83,6 +109,15 @@ import white4 from '../Imgs/white/white4.jpg';
     import BlSB3 from '../Imgs/blue/BSB3.jpg';
     import BlSB4 from '../Imgs/blue/BSB4.jpg';
 
+
+      // Blue/ Long Range / Aero
+      import BlLA1 from '../Imgs/long/blue/blue1LA.jpg'
+      import BlLA3 from '../Imgs/long/blue/blue3LA.jpg'
+  
+       // Blue/ Long Range / Sports
+       import BlLS1 from '../Imgs/long/blue/blue1LS.jpg'
+       import BlLS3 from '../Imgs/long/blue/blue3LS.jpg'
+
     // Blue / Performance
 
     import BlP1 from '../Imgs/performance/blue/Bl1.jpg';
@@ -102,6 +137,14 @@ import white4 from '../Imgs/white/white4.jpg';
     import RS2 from '../Imgs/red/RSB2.jpg';
     import RS3 from '../Imgs/red/RSB3.jpg';
     import RS4 from '../Imgs/red/RSB4.jpg';
+
+       // Red/ Long Range / Aero
+       import RLA1 from '../Imgs/long/red/red1LA.jpg'
+       import RLA3 from '../Imgs/long/red/red3LA.jpg'
+   
+        // Blue/ Long Range / Sports
+        import RLS1 from '../Imgs/long/red/red1LS.jpg'
+        import RLS3 from '../Imgs/long/red/red3LS.jpg'
 
     // Red / Performance
 
@@ -168,7 +211,7 @@ export const carImages = [
 powertrain: 'long',
 wheels: 'aero',
 interior: 'black',
-images: [white1, white2, white3, white4, blackInt]
+images: [WLA1, white2, WLA3, white4, blackInt]
 
 },
 
@@ -177,7 +220,7 @@ images: [white1, white2, white3, white4, blackInt]
 powertrain: 'long',
 wheels: 'aero',
 interior: 'white',
-images: [white1, white2, white3, white4, whiteInt]
+images: [WLA1, white2, WLA3, white4, whiteInt]
 
 },
 
@@ -186,7 +229,7 @@ images: [white1, white2, white3, white4, whiteInt]
  powertrain: 'long',
  wheels: 'sport',
  interior: 'black',
- images: [WSW1, WSW2, WSW3, WSW4, blackInt]
+ images: [WLS1, WSW2, WLS3, WSW4, blackInt]
 
  },
 
@@ -196,7 +239,7 @@ images: [white1, white2, white3, white4, whiteInt]
   powertrain: 'long',
   wheels: 'sport',
   interior: 'white',
-  images: [WSW1, WSW2, WSW3, WSW4, whiteInt]
+  images: [WLS1, WSW2, WLS3, WSW4, whiteInt]
 
   },
 
@@ -276,7 +319,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'black',
-            images: [black1, black2,black3,black4, blackInt]
+            images: [BLA1, black2,BLA3,black4, blackInt]
         },
 
          // Black/Long /Aero/White
@@ -285,7 +328,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'white',
-            images: [black1, black2,black3,black4, whiteInt]
+            images: [BLA1, black2,BLA3,black4, whiteInt]
         },
 
         // Black/Long /Sport/Black
@@ -294,7 +337,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'black',
-            images: [BSB1, BSB2,BSB3,BSB4, blackInt]
+            images: [BLS1, BSB2,BLS3,BSB4, blackInt]
         },
 
         // Black/ Long /Sport/White
@@ -303,7 +346,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'white',
-            images: [BSB1, BSB2,BSB3,BSB4, whiteInt]
+            images: [BLS1, BSB2,BLS3,BSB4, whiteInt]
         },
 
 
@@ -382,7 +425,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'black',
-            images: [silver1,silver2,silver3,silver4, blackInt]
+            images: [SLA1,silver2,SLA3,silver4, blackInt]
         },
         // Silver/ Long/Aero/White
         {
@@ -390,7 +433,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'white',
-            images: [silver1,silver2,silver3,silver4, whiteInt]
+            images: [SLA1,silver2,SLA3,silver4, whiteInt]
         },
 
 
@@ -400,7 +443,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'black',
-            images: [SSB1,SSB2,SSB3,SSB4, blackInt]
+            images: [SLS1,SSB2,SLS3,SSB4, blackInt]
         },
 
            // Silver/Long/Sport/White
@@ -409,7 +452,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'white',
-            images: [SSB1,SSB2,SSB3,SSB4, whiteInt]
+            images: [SLS1,SSB2,SLS3,SSB4, whiteInt]
         },
 
 
@@ -481,7 +524,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'black',
-            images: [blue1, blue2, blue3, blue4,blackInt]
+            images: [BlLA1, blue2, BlLA3, blue4,blackInt]
         },
 
           // Blue/ Long/Aero/White
@@ -490,26 +533,26 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'white',
-            images: [blue1, blue2, blue3, blue4,whiteInt]
+            images: [BlLA1, blue2, BlLA3, blue4,whiteInt]
         },
 
 
-         // Blue/Long/Aero/black
+         // Blue/Long/Sport/black
          {
             color: 'blue',
             powertrain: 'long',
             wheels: 'sport',
             interior: 'black',
-            images: [BlSB1, BlSB2, BlSB3, BlSB4,blackInt]
+            images: [BlLS1, BlSB2, BlLS3, BlSB4,blackInt]
         },
 
-         // Blue/Long/Aero/white
+         // Blue/Long/Sport/white
          {
             color: 'blue',
             powertrain: 'long',
             wheels: 'sport',
             interior: 'white',
-            images: [BlSB1, BlSB2, BlSB3, BlSB4,whiteInt]
+            images: [BlLS1, BlSB2, BlLS3, BlSB4,whiteInt]
         },
 
 
@@ -579,7 +622,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'black',
-            images:[red1,red2,red3,red4,blackInt]
+            images:[RLA1,red2,RLA3,red4,blackInt]
         },
 
          // Red/Long /Aero/White
@@ -588,7 +631,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'aero',
             interior: 'white',
-            images:[red1,red2,red3,red4,whiteInt]
+            images:[RLA1,red2,RLA3,red4,whiteInt]
         },
 
          // Red/Long /Sport/Black
@@ -597,7 +640,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'black',
-            images:[RS1,RS2,RS3,RS4, blackInt]
+            images:[RLS1,RS2,RLS3,RS4, blackInt]
         },
 
          // Red/Long /Sport/White
@@ -606,7 +649,7 @@ images: [white1, white2, white3, white4, whiteInt]
             powertrain: 'long',
             wheels: 'sport',
             interior: 'white',
-            images:[RS1,RS2,RS3,RS4, whiteInt]
+            images:[RLS1,RS2,RLS3,RS4, whiteInt]
         },
 
          // Red/Performance/Black Int

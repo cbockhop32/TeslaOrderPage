@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CurrentSelctionContext } from '../../context/CurrentSelection';
+import { CurrentSlideContext } from '../../context/CurrentSlideContext';
 import PowerTrain from '../PowerTrain/PowerTrain';
 import Paint from '../Paint/Paint';
 import Wheels from '../Wheels/Wheels';
@@ -8,9 +9,11 @@ import SelfDriving from '../SelfDriving/SelfDriving';
 import Order from '../Order/Order';
 import './RightContent.scss';
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 function RightContent() {
     const {currentPowerTrain} = useContext(CurrentSelctionContext);
+    const {changeSlide} = useContext(CurrentSlideContext);
 
 
 
@@ -34,6 +37,19 @@ function RightContent() {
         range = '315';
         topSpeed = '162';
         zeroToSixty = '3.1'
+    }
+
+    // Callback function for when interior section is visible in right content
+
+    const onChange = (isVisible) => {
+        if(isVisible) {
+            setTimeout(() => {
+                changeSlide(4)
+            }, 2000);
+            
+            
+        }
+
     }
 
     
@@ -98,7 +114,11 @@ function RightContent() {
 
                 {/* Interior Section */}
 
-                <Interior />
+                <VisibilitySensor onChange={onChange}>
+                    <Interior />
+                </VisibilitySensor>
+
+               
 
                 {/* Self Driving Section */}
 
