@@ -15,14 +15,16 @@ function ImgSlider() {
 
     let imgList;
 
+    imgList = carImages.find(car => car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior).images
 
 
 
-   carImages.forEach(car => {
-    if(car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior) {
-        imgList = car.images
-    }
-        })
+
+//    carImages.forEach(car => {
+//      {
+//         imgList = car.images
+//     } 
+//         })
 
 
 
