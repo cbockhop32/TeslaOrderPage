@@ -19,16 +19,6 @@ function ImgSlider() {
 
 
 
-
-//    carImages.forEach(car => {
-//      {
-//         imgList = car.images
-//     } 
-//         })
-
-
-
-
     const handleBack = () => {
 
         if(currentSlide !== 0) {
