@@ -9,11 +9,11 @@ import SelfDriving from '../SelfDriving/SelfDriving';
 import Order from '../Order/Order';
 import './RightContent.scss';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+
 
 function RightContent() {
     const {currentPowerTrain} = useContext(CurrentSelctionContext);
-    const {changeSlide} = useContext(CurrentSlideContext);
+  
 
 
 
@@ -39,18 +39,7 @@ function RightContent() {
         zeroToSixty = '3.1'
     }
 
-    // Callback function for when interior section is visible in right content
-
-    const onChange = (isVisible) => {
-        if(isVisible) {
-            setTimeout(() => {
-                changeSlide(4)
-            }, 2000);
-            
-            
-        }
-
-    }
+   
 
     
 
@@ -114,9 +103,9 @@ function RightContent() {
 
                 {/* Interior Section */}
 
-                <VisibilitySensor onChange={onChange}>
+            
                     <Interior />
-                </VisibilitySensor>
+          
 
                
 
