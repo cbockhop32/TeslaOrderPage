@@ -15,24 +15,22 @@ function ImgSlider() {
 
     let imgList;
 
+
+    // This filters through the carImages  in the helper folder and gets the specific set of images to be rendered in the component
     imgList = carImages.find(car => car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior).images
 
 
 
     const handleBack = () => {
-
         if(currentSlide !== 0) {
             changeSlide(currentSlide - 1)
         } 
- 
     }
 
     const handleForward = () => {
-
         if(currentSlide !== imgList.length -1 ) {
             changeSlide(currentSlide + 1)
         }
- 
     }
 
 

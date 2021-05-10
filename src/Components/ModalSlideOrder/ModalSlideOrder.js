@@ -11,7 +11,7 @@ function ModalSlideOrder() {
 
     let imgSrc;
 
-
+// Just gets a single image of the exact car with the current options selected
     carImages.forEach(car => {
         if(car.color === currentColor && car.powertrain === currentPowerTrain && currentWheels === car.wheels && car.interior === currentInterior) {
             imgSrc = car.images[0]
