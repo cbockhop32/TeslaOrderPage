@@ -6,6 +6,8 @@
     flex: 5;
     height: 95%;
     position: relative;
+    @include flexCenter(row);
+    
  
 }
 

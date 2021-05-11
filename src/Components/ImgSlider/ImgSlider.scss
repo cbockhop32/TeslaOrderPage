@@ -2,8 +2,10 @@
 
 
 .ImgSlider {
-    width: 100%;
+    width: 95%;
     height: 100%;
+    
+
     
   
     @include flexCenter(row);
@@ -16,14 +18,20 @@
         @include flexCenter(row);
         border-radius: 50%;
         cursor: pointer;
-        transition: opacity 0.3s ease-out;
+    
+        border: none;
+        transition: background 0.4s ease;
+
+ 
         
     }
 
-    .Slider-Btn.Hide {
-        opacity: 0;
+
+    .Slider-Btn:hover {
+        background: darken($greybackground, 5%);
     }
-    
+
+ 
 
 
     .ImgSlider-Container {
@@ -31,6 +39,7 @@
         width: 100%;
         height: 100%;
        overflow: hidden;
+ 
 
         .Slide {
             width: 100%;
