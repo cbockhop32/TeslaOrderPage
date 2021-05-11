@@ -21,8 +21,6 @@ function ImgSlider() {
         position: 'absolute',
         top: 'calc(50% - 15px)',
         zIndex: '2'
-     
-        
     }
 
 
@@ -57,7 +55,6 @@ function ImgSlider() {
     return (
         <div className="ImgSlider">
             <Carousel
-          
                 width="100%"
                 showThumbs={false}
                 showStatus={false}
@@ -65,7 +62,6 @@ function ImgSlider() {
                 infiniteLoop={true}
                 selectedItem={currentSlide}
                 swipeable={false}
- 
                 showArrows={showing ? false : true}
          
                 renderArrowPrev={(onClickHandler, hasPrev, label) => 
@@ -88,22 +84,6 @@ function ImgSlider() {
 
             </Carousel>
         </div>
-
-
-
-
-// {/* 
-//                 <div className={currentSlide !== 0 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleBack()} style={{marginLeft: '1rem'}}>
-//                     <i className="fas fa-chevron-left"></i>
-//                 </div>
-//             <div className="ImgSlider-Container">
-//               <img src={imgList[currentSlide]} className="Slide" alt="Slide" />
-//             </div>
-
-//                 <div className={currentSlide !== 4 && showing === false ? "Slider-Btn": "Slider-Btn Hide"} onClick={() => handleForward()} style={{marginRight: '1rem'}}>
-//                     <i className="fas fa-chevron-right"></i>
-//                 </div>
-//                  */}
        
     )
 }
